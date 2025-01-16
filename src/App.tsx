@@ -1,7 +1,7 @@
 // import React from "react";
 import "./App.css";
-import AppRoutes from "./routs";
-import { AuthProvider } from "./context/AuthContext";
+import AppRoutes from "@/routs";
+import { AuthProvider } from "@/context/AuthContext";
 import ProtectedRoute from "@/context/authProtection";
 import { Routes, Route } from "react-router-dom";
 import Login from "@/templates/Login";
@@ -22,6 +22,7 @@ function App() {
         }}
       />
       <AuthProvider>
+        
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route
