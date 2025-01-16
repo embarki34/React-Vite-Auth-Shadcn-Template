@@ -1,0 +1,259 @@
+{
+  "actions": {
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "common": {
+    "loading": "Loading",
+    "noData": "No data",
+    "showing": "Showing",
+    "to": "to",
+    "of": "of",
+    "results": "results",
+    "previous": "Previous",
+    "next": "Next",
+    "actions": "Actions",
+    "viewDetails": "View Details",
+    "status": "Status",
+    "all": "All",
+    "betaWelcome": "Welcome to our beta version. Help us improve by sharing your feedback.",
+    "betaFeatures": "Some features may be in development",
+    "betaFeedback": "Your input shapes our improvements",
+    "confirmation": {
+      "title": "Confirmation Required",
+      "cancel": "Cancel",
+      "confirm": "Confirm"
+    }
+  },
+
+  "login": {
+    "title": "Welcome Back",
+    "subtitle": "Please sign in to continue",
+    "username": "Username",
+    "password": "Password",
+    "signIn": "Sign In",
+    "enterUsername": "Enter username",
+    "enterPassword": "Enter password",
+    "loginSuccess": "Login successful!",
+    "loginFailed": "Login failed",
+    "installerLoginError": "Installers must use the mobile app to login",
+    "signOut": "Sign out"
+  },
+
+  "users": {
+    "title": "Users",
+    "addUser": "Add User",
+    "username": "Username",
+    "phone": "Phone Number",
+    "role": "Role",
+    "wilaya": "Wilaya",
+    "commune": "Commune",
+    "status": {
+      "active": "Active",
+      "pending": "Pending",
+      "refused": "Refused"
+    },
+    "availability": "Availability",
+    "available": "Available",
+    "unavailable": "Unavailable",
+    "uploadFiles": "Upload Files",
+    "selectWilaya": "Select Wilaya",
+    "selectRole": "Select Role",
+    "roles": {
+      "admin": "Admin",
+      "installer": "Installer"
+    },
+    "searchPlaceholder": "Search users..."
+  },
+  "orders": {
+    "title": "Orders",
+    "serviceType": "Service Type", 
+    "services": {
+      "Installation": "Installation",
+      "support": "Support"
+    },
+    "status": {
+      "approved": "Approved",
+      "refused": "Refused", 
+      "pending": "Pending"
+    },
+
+    "name":"Name",
+    "date": "Date",
+    "performedBy": "Performed By",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "createdAt": "Created At",
+    "updatedAt": "Updated At",
+    "orderNumber": "Order ",
+    "customerDetails": "Customer Details",
+    "phone": "Phone",
+    "location": "Location",
+    "orderInfo": "Order Information",
+    "articles": "Articles",
+    "article": "Article",
+    "serialNumber": "Serial Number",
+    "articleImage": "Article {index} Image {imageIndex}",
+    "overview": "Overview",
+    "approve": "Approve",
+    "refuse": "Refuse",
+    "statusUpdateSuccess": "Order status updated to {status}",
+    "statusUpdateError": "Error updating order status"
+  },
+
+  "motivations": {
+    "title": "Motivations",
+    "name": "Name",
+    "incentive": "Incentive",
+    "status": {
+      "active": "Active",
+      "disactive": "Inactive",
+      "expired": "Expired"
+    },
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "timeLeft": "Time Left",
+    "products": "Products",
+    "days": "days",
+    "allTimeOrders": "All Time Orders",
+    "activeMotivations": "Active Motivations",
+    "addButton": "Add Motivation",
+    "addMotivation": {
+      "title": "Add New Motivation",
+      "subtitle": "Create a new motivation with product incentives and rewards",
+      "name": "Motivation Name",
+      "namePlaceholder": "Enter motivation name...",
+      "productRefs": "Product References",
+      "productRefsPlaceholder": "Type or paste product references...",
+      "incentiveAmount": "Incentive Amount",
+      "incentivePlaceholder": "Enter incentive amount...",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "duplicateError": "{ref} already exists",
+      "duplicateInOther": "{ref} already exists in another motivation. Add anyway?",
+      "duplicateCancelled": "{ref} was not added - cancelled by user",
+      "duplicateFound": "{ref} was not added - duplicate found in other motivation",
+      "cancel": "Cancel",
+      "create": "Create Motivation",
+      "creating": "Creating...",
+      "success": "Motivation added successfully!",
+      "bulkConfirmation": {
+        "title": "Duplicate References Found",
+        "description": "The following references already exist in other motivations. Click X to exclude any references you don't want to add:",
+        "cancel": "Cancel",
+        "addSelected": "Add Selected"
+      }
+    },
+    "editMotivation": {
+      "changeStatusDescription": "Are you sure you want to change the status of this motivation?"
+    },
+    "confirmStatusChange": "Are you sure you want to {action} this motivation?",
+    "activate": "activate",
+    "deactivate": "deactivate",
+    "statusUpdateSuccess": "Motivation {name} has been {status}",
+    "activated": "activated",
+    "deactivated": "deactivated",
+    "statusUpdateDescription": "The status of this motivation has been successfully updated to {status}",
+    "noMotivationsFound": "No motivations found",
+    "loadError": "Failed to load motivations",
+    "invalidDataFormat": "Invalid data format received from server",
+    "productsCount": "{count} products",
+    "drawer": {
+      "title": "Motivation Details",
+      "subtitle": "View complete motivation information",
+      "timeline": "Timeline",
+      "durationDetails": "Duration Details",
+      "totalDuration": "Total Duration",
+      "productReferences": "Product References",
+      "searchProducts": "Search products...",
+      "expired": "Expired",
+      "daysLeft": "{days} days left",
+      "active": "Active",
+      "inactive": "Inactive",
+      "status": "Status",
+      "days": "days"
+    }
+  },
+
+  "addUser": {
+    "title": "Add User",
+    "password": "Password",
+    "email": "Email",
+    "phone": "Phone Number",
+    "location": "Location",
+    "workDays": "Work Days",
+    "workHours": "Work Hours",
+    "from": "From",
+    "to": "To",
+    "profileImage": "Profile Image",
+    "termsAndConditions": "Terms and Conditions",
+    "save": "Save",
+    "validation": {
+      "emailInvalid": "Please enter a valid email",
+      "phoneInvalid": "Please enter a valid phone number"
+    },
+    "days": {
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday"
+    }
+  },
+
+  "dashboard": {
+    "title": "Dashboard",
+    "loading": "Loading dashboard...",
+    "error": {
+      "title": "Dashboard Loading Error",
+      "retry": "Retry"
+    },
+    "welcome": "Welcome Back!",
+    "subtitle": "Here's what's happening with your platform today",
+    "stats": {
+      "totalUsers": "Total Users",
+      "activeInSystem": "Active in system",
+      "totalOrders": "Total Orders",
+      "allTimeOrders": "All time orders",
+      "totalMotivations": "Total Motivations",
+      "activeMotivations": "Active motivations",
+      "expiringSoon": "Expiring Soon",
+      "motivationsToExpire": "Motivations to expire",
+      "emptyMotivationsToExpire": "No motivations are expiring soon"
+    },
+    "charts": {
+      "orderStatus": {
+        "title": "Orders by Status",
+        "subtitle": "Distribution of orders across different statuses"
+      },
+      "usersByRole": {
+        "title": "Users by Role",
+        "subtitle": "Distribution of users across different roles"
+      },
+      "motivationStatus": {
+        "title": "Motivation Status Distribution",
+        "subtitle": "Current status of all motivations"
+      },
+      "userStatus": {
+        "title": "User Status Overview",
+        "subtitle": "Distribution of user account statuses"
+      },
+      "dailyOrders": {
+        "title": "Daily Orders Trend",
+        "subtitle": "Order volume over time"
+      }
+    },
+    "motivationsExpiringSoon": {
+      "title": "Motivations Expiring Soon",
+      "subtitle": "Motivations requiring attention",
+      "noMotivations": "No motivations are expiring soon"
+    }
+  }
+}

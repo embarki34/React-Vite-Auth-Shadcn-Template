@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    // ... existing options ...
+    "jsx": "react-jsx",
+    "strict": true,
+    "target": "es5",
+    "lib": ["es2015", "DOM"],
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "allowJs": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}

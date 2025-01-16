@@ -1,0 +1,264 @@
+{
+
+  "actions": {
+    "add": "إضافة",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "view": "عرض",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "close": "إغلاق"
+  },
+  "common": {
+    "loading": "جاري التحميل",
+    "noData": "لا توجد بيانات",
+    "showing": "عرض",
+    "to": "إلى",
+    "of": "من",
+    "results": "النتائج",
+    "previous": "السابق",
+    "next": "التالي",
+    "actions": "الإجراءات",
+    "viewDetails": "عرض التفاصيل",
+    "status": "الحالة",
+    "all": "الكل",
+    "betaWelcome": "مرحباً بك في النسخة التجريبية. ساعدنا في التحسين من خلال مشاركة ملاحظاتك.",
+    "betaFeatures": "قد تكون بعض الميزات قيد التطوير",
+    "betaFeedback": "ملاحظاتك تشكل تحسيناتنا",
+    "confirmation": {
+      "title": "تأكيد مطلوب",
+      "cancel": "إلغاء",
+      "confirm": "تأكيد"
+    }
+  },
+
+  "login": {
+    "title": "مرحباً بعودتك",
+    "subtitle": "الرجاء تسجيل الدخول للمتابعة",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "signIn": "تسجيل الدخول",
+    "enterUsername": "أدخل اسم المستخدم",
+    "enterPassword": "أدخل كلمة المرور",
+    "loginSuccess": "تم تسجيل الدخول بنجاح!",
+    "loginFailed": "فشل تسجيل الدخول",
+    "installerLoginError": "يجب على المثبتين استخدام تطبيق الهاتف المحمول لتسجيل الدخول",
+    "signOut": "تسجيل الخروج"
+  },
+
+  "users": {
+    "title": "المستخدمين",
+    "addUser": "إضافة مستخدم",
+    "username": "اسم المستخدم",
+    "phone": "رقم الهاتف",
+    "role": "الدور",
+    "wilaya": "الولاية",
+    "commune": "البلدية",
+    "status": {
+      "active": "نشط",
+      "pending": "قيد الانتظار",
+      "refused": "مرفوض"
+    },
+    "availability": "التوفر",
+    "available": "متوفر",
+    "unavailable": "غير متوفر",
+    "uploadFiles": "رفع الملفات",
+    "selectWilaya": "اختر الولاية",
+    "selectRole": "اختر الدور",
+    "roles": {
+      "admin": "مدير",
+      "installer": "مثبت"
+    },
+    "searchPlaceholder": "البحث عن المستخدمين..."
+  },
+
+  "orders": {
+    "title": "الطلبات",
+    "serviceType": "نوع الخدمة",
+    "services": {
+      "Installation": "تركيب",
+      "support": "دعم"
+    },
+    "status": {
+      "approved": "موافق عليه",
+      "refused": "مرفوض",
+      "pending": "قيد الانتظار"
+    },
+
+    "date": "التاريخ",
+    "performedBy": "المثبت",
+    "startDate": "تاريخ البداية",
+    "endDate": "تاريخ النهاية",
+    "createdAt": "تاريخ الإنشاء",
+    "updatedAt": "تاريخ التحديث",
+    "orderNumber": "طلب رقم",
+    "customerDetails": "تفاصيل العميل",
+    "name": "الاسم",
+    "phone": "الهاتف",
+    "location": "الموقع",
+    "orderInfo": "معلومات الطلب",
+    "articles": "المواد",
+    "article": "المادة",
+    "serialNumber": "الرقم التسلسلي",
+    "articleImage": "صورة {imageIndex} للمادة {index}",
+    "overview": "نظرة عامة",
+    "approve": "موافقة",
+    "refuse": "رفض",
+    "statusUpdateSuccess": "تم تحديث حالة الطلب إلى {status}",
+    "statusUpdateError": "خطأ في تحديث حالة الطلب"
+  },
+
+  "motivations": {
+    "title": "التحفيزات",
+    "name": "الاسم",
+    "incentive": "الحافز",
+    "editMotivation": {
+      "changeStatus": "تغيير حالة التحفيز",
+      "changeStatusDescription": "هل أنت متأكد أنك تريد تغيير حالة هذا التحفيز؟",
+      "confirm": "تأكيد",
+      "cancel": "إلغاء"
+    },
+    "status": {
+      "active": "نشط",
+      "disactive": "غير نشط",
+      "expired": "منتهي الصلاحية"
+    },
+    "startDate": "تاريخ البداية",
+    "endDate": "تاريخ النهاية",
+    "timeLeft": "الوقت المتبقي",
+    "products": "المنتجات",
+    "days": "أيام",
+    "allTimeOrders": "جميع الطلبات",
+    "activeMotivations": "التحفيزات النشطة",
+    "addButton": "إضافة تحفيز",
+    "addMotivation": {
+      "title": "إضافة تحفيز جديد",
+      "subtitle": "إنشاء تحفيز جديد مع حوافز ومكافآت المنتجات",
+      "name": "اسم التحفيز",
+      "namePlaceholder": "أدخل اسم التحفيز...",
+      "productRefs": "مراجع المنتجات",
+      "productRefsPlaceholder": "اكتب أو الصق مراجع المنتجات...",
+      "incentiveAmount": "مبلغ الحافز",
+      "incentivePlaceholder": "أدخل مبلغ الحافز...",
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهاية",
+      "duplicateError": "{ref} موجود بالفعل",
+      "duplicateInOther": "{ref} موجود بالفعل في تحفيز آخر. إضافة على أي حال؟",
+      "duplicateCancelled": "{ref} لم تتم إضافته - تم الإلغاء من قبل المستخدم",
+      "duplicateFound": "{ref} لم تتم إضافته - تم العثور على نسخة مكررة في تحفيز آخر",
+      "cancel": "إلغاء",
+      "create": "إنشاء التحفيز",
+      "creating": "جاري الإنشاء...",
+      "success": "تمت إضافة التحفيز بنجاح!",
+      "bulkConfirmation": {
+        "title": "تم العثور على مراجع مكررة",
+        "description": "المراجع التالية موجودة بالفعل في تحفيزات أخرى. انقر على علامة الإغلاق لاستبعاد أي مراجع لا تريد إضافتها",
+        "cancel": "إلغاء",
+        "addSelected": "إضافة المحدد"
+      }
+    },
+    "confirmStatusChange": "هل أنت متأكد أنك تريد {action} هذا التحفيز؟",
+    "activate": "تفعيل",
+    "deactivate": "تعطيل",
+    "statusUpdateSuccess": "تم {status} التحفيز {name}",
+    "activated": "تفعيل",
+    "deactivated": "تعطيل",
+    "statusUpdateDescription": "تم تحديث حالة هذا التحفيز بنجاح إلى {status}",
+    "noMotivationsFound": "لم يتم العثور على تحفيزات",
+    "loadError": "فشل في تحميل التحفيزات",
+    "invalidDataFormat": "تم استلام تنسيق بيانات غير صالح من الخادم",
+    "productsCount": "{count} منتج",
+    "drawer": {
+      "title": "تفاصيل التحفيز",
+      "subtitle": "عرض معلومات التحفيز الكاملة",
+      "timeline": "الجدول الزمني",
+      "durationDetails": "تفاصيل المدة",
+      "totalDuration": "المدة الإجمالية",
+      "productReferences": "مراجع المنتجات",
+      "searchProducts": "البحث عن المنتجات...",
+      "expired": "منتهي الصلاحية",
+      "daysLeft": "{days} يوم متبقي",
+      "active": "نشط",
+      "status": "الحالة",
+      "days": "أيام"
+    }
+  },
+
+  "addUser": {
+    "title": "إضافة مستخدم",
+    "password": "كلمة المرور",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "location": "الموقع",
+    "workDays": "أيام العمل",
+    "workHours": "ساعات العمل",
+    "from": "من",
+    "to": "إلى",
+    "profileImage": "صورة الملف الشخصي",
+    "termsAndConditions": "الشروط والأحكام",
+    "save": "حفظ",
+    "validation": {
+      "emailInvalid": "الرجاء إدخال بريد إلكتروني صحيح",
+      "phoneInvalid": "الرجاء إدخال رقم هاتف صحيح"
+    },
+    "days": {
+      "saturday": "السبت",
+      "sunday": "الأحد",
+      "monday": "الإثنين",
+      "tuesday": "الثلاثاء",
+      "wednesday": "الأربعاء",
+      "thursday": "الخميس",
+      "friday": "الجمعة"
+    }
+  },
+
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "loading": "جاري تحميل لوحة التحكم...",
+    "error": {
+      "title": "خطأ في تحميل لوحة التحكم",
+      "retry": "إعادة المحاولة"
+    },
+    "welcome": "مرحباً بعودتك!",
+    "subtitle": "إليك ما يحدث على منصتك اليوم",
+    "stats": {
+      "totalUsers": "إجمالي المستخدمين",
+      "activeInSystem": "نشط في النظام",
+      "totalOrders": "إجمالي الطلبات",
+      "allTimeOrders": "جميع الطلبات",
+      "totalMotivations": "إجمالي التحفيزات",
+      "activeMotivations": "التحفيزات النشطة",
+      "expiringSoon": "ينتهي قريباً",
+      "motivationsToExpire": "تحفيزات على وشك الانتهاء",
+      "emptyMotivationsToExpire": "لا توجد تحفيزات على وشك الانتهاء"
+    },
+    "charts": {
+      "orderStatus": {
+        "title": "الطلبات حسب الحالة",
+        "subtitle": "توزيع الطلبات عبر الحالات المختلفة"
+      },
+      "usersByRole": {
+        "title": "المستخدمون حسب الدور",
+        "subtitle": "توزيع المستخدمين عبر الأدوار المختلفة"
+      },
+      "motivationStatus": {
+        "title": "توزيع حالات التحفيز",
+        "subtitle": "الحالة الحالية لجميع التحفيزات"
+      },
+      "userStatus": {
+        "title": "نظرة عامة على حالة المستخدم",
+        "subtitle": "توزيع حالات حسابات المستخدمين"
+      },
+      "dailyOrders": {
+        "title": "اتجاه الطلبات اليومية",
+        "subtitle": "حجم الطلبات مع مرور الوقت"
+      }
+    },
+    "motivationsExpiringSoon": {
+      "title": "تحفيزات تنتهي قريباً",
+      "subtitle": "تحفيزات تحتاج إلى اهتمام",
+      "noMotivations": "لا توجد تحفيزات على وشك الانتهاء"
+    }
+  }
+}

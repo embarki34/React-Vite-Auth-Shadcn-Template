@@ -1,0 +1,264 @@
+{
+  "actions": {
+    "add": "Ajouter",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "view": "Voir",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "confirm": "Confirmer"
+  },
+  "common": {
+    "loading": "Chargement",
+    "noData": "Aucune donnée",
+    "showing": "Affichage de",
+    "to": "à",
+    "of": "sur",
+    "results": "résultats",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "actions": "Actions",
+    "viewDetails": "Voir les détails",
+    "status": "Statut",
+    "all": "Tout",
+    "betaWelcome": "Bienvenue dans notre version bêta. Aidez-nous à nous améliorer en partageant vos commentaires.",
+    "betaFeatures": "Certaines fonctionnalités peuvent être en développement",
+    "betaFeedback": "Vos commentaires façonnent nos améliorations",
+    "confirmation": {
+      "title": "Confirmation Requise",
+      "cancel": "Annuler",
+      "confirm": "Confirmer"
+    }
+  },
+
+  "login": {
+    "title": "Bon retour",
+    "subtitle": "Veuillez vous connecter pour continuer",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "signIn": "Se connecter",
+    "enterUsername": "Entrez votre nom d'utilisateur",
+    "enterPassword": "Entrez votre mot de passe",
+    "loginSuccess": "Connexion réussie !",
+    "loginFailed": "Échec de la connexion",
+    "installerLoginError": "Les installateurs doivent utiliser l'application mobile pour se connecter",
+    "signOut": "Se déconnecter"
+  },
+
+  "users": {
+    "title": "Utilisateurs",
+    "addUser": "Ajouter un utilisateur",
+    "username": "Nom d'utilisateur",
+    "phone": "Téléphone",
+    "role": "Rôle",
+    "wilaya": "Wilaya",
+    "commune": "Commune",
+    "status": {
+      "active": "Actif",
+      "pending": "En attente",
+      "refused": "Refusé"
+    },
+    "availability": "Disponibilité",
+    "available": "Disponible",
+    "unavailable": "Indisponible",
+    "uploadFiles": "Télécharger des fichiers",
+    "selectWilaya": "Sélectionner la wilaya",
+    "selectRole": "Sélectionner le rôle",
+    "roles": {
+      "admin": "Administrateur",
+      "installer": "Installateur"
+    },
+    "searchPlaceholder": "Rechercher des utilisateurs..."
+  },
+
+  "orders": {
+    "title": "Commandes",
+    "serviceType": "Type de service",
+    "services": {
+      "installation": "Installation", 
+      "support": "Support"
+    },
+    "status": {
+      "approved": "Approuvé",
+      "refused": "Refusé",
+      "pending": "En attente"
+    },
+    "date": "Date",
+    "startDate": "Date de début",
+    "endDate": "Date de fin", 
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "orderNumber": "Commande",
+    "customerDetails": "Détails du client",
+    "name": "Nom",
+    "phone": "Téléphone",
+    "location": "Emplacement",
+    "orderInfo": "Informations de commande",
+    "articles": "Articles",
+    "article": "Article",
+    "serialNumber": "Numéro de série",
+    "articleImage": "Article {index} Image {imageIndex}",
+    "overview": "Aperçu",
+    "approve": "Approuver",
+    "refuse": "Refuser",
+    "statusUpdateSuccess": "Statut de la commande mis à jour vers {status}",
+    "statusUpdateError": "Erreur lors de la mise à jour du statut de la commande"
+  },
+
+  "motivations": {
+    "title": "Motivations",
+    "name": "Nom",
+    "incentive": "Prime",
+    "status": {
+      "active": "Actif",
+      "disactive": "Inactif",
+      "expired": "Expiré"
+    },
+    "services":{
+      "Installation": "Installation",
+      "support": "Support"
+    },
+    "date": "Date",
+    "performedBy": "Effectué  par",
+    "startDate": "Date de début",
+    "endDate": "Date de fin",
+    "timeLeft": "Temps restant",
+    "products": "Produits",
+    "days": "jours",
+    "allTimeOrders": "Toutes les commandes",
+    "activeMotivations": "Motivations actives",
+    "addButton": "Ajouter une motivation",
+    "addMotivation": {
+      "title": "Ajouter une nouvelle motivation",
+      "subtitle": "Créer une nouvelle motivation avec des incitations et des récompenses",
+      "name": "Nom de la motivation",
+      "namePlaceholder": "Entrez le nom de la motivation...",
+      "productRefs": "Références produits",
+      "productRefsPlaceholder": "Tapez ou collez les références produits...",
+      "incentiveAmount": "Montant de l'incitation",
+      "incentivePlaceholder": "Entrez le montant de l'incitation...",
+      "startDate": "Date de début",
+      "endDate": "Date de fin",
+      "duplicateError": "{ref} existe déjà",
+      "duplicateInOther": "{ref} existe déjà dans une autre motivation. Ajouter quand même ?",
+      "duplicateCancelled": "{ref} n'a pas été ajouté - annulé par l'utilisateur",
+      "duplicateFound": "{ref} n'a pas été ajouté - doublon trouvé dans une autre motivation",
+      "cancel": "Annuler",
+      "create": "Créer la motivation",
+      "creating": "Création en cours...",
+      "success": "Motivation ajoutée avec succès !",
+      "bulkConfirmation": {
+        "title": "Références en double trouvées",
+        "description": "Les références suivantes existent déjà dans d'autres motivations. Cliquez sur X pour exclure les références que vous ne souhaitez pas ajouter :",
+        "cancel": "Annuler",
+        "addSelected": "Ajouter la sélection"
+      }
+    },
+    "editMotivation": {
+      "changeStatusDescription": "Êtes-vous sûr de vouloir changer le statut de cette motivation ?"
+    },
+    "confirmStatusChange": "Êtes-vous sûr de vouloir {action} cette motivation ?",
+    "activate": "activer",
+    "deactivate": "désactiver",
+    "statusUpdateSuccess": "La motivation {name} a été {status}",
+    "activated": "activée",
+    "deactivated": "désactivée",
+    "statusUpdateDescription": "Le statut de cette motivation a été mis à jour avec succès à {status}",
+    "noMotivationsFound": "Aucune motivation trouvée",
+    "loadError": "Échec du chargement des motivations",
+    "invalidDataFormat": "Format de données invalide reçu du serveur",
+    "productsCount": "{count} produits",
+    "drawer": {
+      "title": "Détails de la motivation",
+      "subtitle": "Voir les informations complètes de la motivation",
+      "timeline": "Chronologie",
+      "durationDetails": "Détails de la durée",
+      "totalDuration": "Durée totale",
+      "productReferences": "Références produits",
+      "searchProducts": "Rechercher des produits...",
+      "expired": "Expiré",
+      "daysLeft": " jours restants",
+      "active": "Actif",
+      "inactive": "Inactif",
+      "status": "Statut",
+      "days": "jours"
+    }
+  },
+
+  "addUser": {
+    "title": "Ajouter un utilisateur",
+    "password": "Mot de passe",
+    "email": "Email",
+    "phone": "Téléphone",
+    "location": "Emplacement",
+    "workDays": "Jours de travail",
+    "workHours": "Heures de travail",
+    "from": "De",
+    "to": "À",
+    "profileImage": "Photo de profil",
+    "termsAndConditions": "Conditions générales",
+    "save": "Enregistrer",
+    "validation": {
+      "emailInvalid": "Veuillez entrer une adresse email valide",
+      "phoneInvalid": "Veuillez entrer un numéro de téléphone valide"
+    },
+    "days": {
+      "saturday": "Samedi",
+      "sunday": "Dimanche",
+      "monday": "Lundi",
+      "tuesday": "Mardi",
+      "wednesday": "Mercredi",
+      "thursday": "Jeudi",
+      "friday": "Vendredi"
+    }
+  },
+
+  "dashboard": {
+    "title": "Tableau de bord",
+    "loading": "Chargement du tableau de bord...",
+    "error": {
+      "title": "Erreur de chargement du tableau de bord",
+      "retry": "Réessayer"
+    },
+    "welcome": "Bon retour !",
+    "subtitle": "Voici ce qui se passe sur votre plateforme aujourd'hui",
+    "stats": {
+      "totalUsers": "Utilisateurs totaux",
+      "activeInSystem": "Actifs dans le système",
+      "totalOrders": "Commandes totales",
+      "allTimeOrders": "Toutes les commandes",
+      "totalMotivations": "Motivations totales",
+      "activeMotivations": "Motivations actives",
+      "expiringSoon": "Expire bientôt",
+      "motivationsToExpire": "Motivations à expirer",
+      "emptyMotivationsToExpire": "Aucune motivation n'expire prochainement"
+    },
+    "charts": {
+      "orderStatus": {
+        "title": "Commandes par statut",
+        "subtitle": "Distribution des commandes selon les différents statuts"
+      },
+      "usersByRole": {
+        "title": "Utilisateurs par rôle",
+        "subtitle": "Distribution des utilisateurs selon les différents rôles"
+      },
+      "motivationStatus": {
+        "title": "Distribution des statuts de motivation",
+        "subtitle": "Statut actuel de toutes les motivations"
+      },
+      "userStatus": {
+        "title": "Aperçu des statuts utilisateurs",
+        "subtitle": "Distribution des statuts des comptes utilisateurs"
+      },
+      "dailyOrders": {
+        "title": "Tendance des commandes quotidiennes",
+        "subtitle": "Volume des commandes dans le temps"
+      }
+    },
+    "motivationsExpiringSoon": {
+      "title": "Motivations expirant bientôt",
+      "subtitle": "Motivations nécessitant une attention",
+      "noMotivations": "Aucune motivation n'expire prochainement"
+    }
+  }
+}
