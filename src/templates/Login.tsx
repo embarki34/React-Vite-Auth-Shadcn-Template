@@ -1,7 +1,12 @@
 import { LoginForm } from "@/components/login-form";
 import { AnimatedBackground } from "@/components/animated-background";
+import { isAuthenticated } from "@/const/login";
+import { Navigate } from "react-router-dom";
 
 export default function LoginPage() {
+  if (isAuthenticated()) {
+    return <Navigate to="/dashboard" />;
+  }
   return (
     <>
       <AnimatedBackground />

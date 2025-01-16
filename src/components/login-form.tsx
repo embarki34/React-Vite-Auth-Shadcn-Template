@@ -3,12 +3,53 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { FaGoogle, FaGithub, FaTwitter } from 'react-icons/fa'
+// import { FaGoogle, FaGithub, FaTwitter } from 'react-icons/fa'
+import { useState } from "react"
+import { isAuthenticated, login } from "@/const/login"
+import { useAuth } from "@/context/AuthContext"
+import { Navigate, useNavigate } from "react-router-dom"
+import { toast } from 'sonner';
+import { Loader2 } from "lucide-react"
+
 
 export function LoginForm({
     className,
     ...props
 }: React.ComponentProps<"div">) {
+
+    const navigate = useNavigate();
+    const { login: authLogin } = useAuth();
+    const [isLoading, setIsLoading] = useState(false);
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleLogin = async (event: React.FormEvent) => {
+        event.preventDefault();
+        setIsLoading(true);
+        try {
+          const response = await login({ username, password });
+          if (response) {
+            authLogin();
+            toast.success('Login successful!');
+            navigate('/dashboard');
+          }
+        } catch (error) {
+          setUsername("");
+          setPassword("");
+          if (error instanceof Error && error.message === 'Installers are not allowed to login through this interface') {
+            toast.error('Installers must use the mobile app to login');
+          } else {
+            console.log(error)
+            toast.error(error instanceof Error ? error.message : "Login failed");
+          }
+        }
+        setIsLoading(false);
+      };
+    if (isAuthenticated()) {
+        return <Navigate to="/dashboard" />;
+      }
+
+
     return (
         <div className={cn("flex flex-col gap-6", className)} {...props}>
             <Card className="overflow-hidden shadow-xl backdrop-blur-sm bg-white/30">
@@ -28,6 +69,7 @@ export function LoginForm({
                                     type="text"
                                     placeholder="username"
                                     required
+                                    onChange={(e)=> setUsername(e.target.value)}
                                     className="bg-gray-50"
                                 />
                             </div>
@@ -41,11 +83,16 @@ export function LoginForm({
                                         Forgot your password?
                                     </a>
                                 </div>
-                                <Input id="password" type="password" placeholder="password" required className="bg-gray-50" />
+                                <Input id="password"
+                                    onChange={(e)=> setPassword(e.target.value)}
+                                    type="password" placeholder="password" required className="bg-gray-50" />
                             </div>
-                            <Button type="submit" className="w-full bg-blue-600 text-white hover:bg-blue-700">
+                            {isLoading ? <Button type="submit"  onClick={handleLogin} className="w-full bg-blue-600 text-white hover:bg-blue-700">
+                                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
                                 Login
-                            </Button>
+                            </Button> : <Button type="submit"  onClick={handleLogin} className="w-full bg-blue-600 text-white hover:bg-blue-700">
+                                Login
+                            </Button>}
                             {/* <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-gray-200">
                                 <span className="relative z-10 bg-white px-2 text-muted-foreground">
                                     Or continue with
@@ -74,7 +121,7 @@ export function LoginForm({
                         </div>
                     </form>
                     <div className="relative hidden  md:block ">
-                  
+
                         <div className="absolute inset-0 flex items-center bg-gradient-to-br from-purple-600 via-purple-500 to-indigo-400 justify-center p-6">
                             <div className="text-center text-white tracking-wide">
                                 <h2 className="text-2xl font-bold text-white  mb-2">Welcome to ArtiCodeX </h2>

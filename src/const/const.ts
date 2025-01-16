@@ -1,2 +1,2 @@
-export const baseUrl = 'your api url';
-export const SECRET_KEY = 'your secret key'; // Replace with a secure secret key
+export const baseUrl = 'http://localhost:3000/api';
+export const SECRET_KEY = '.k.ajsdghjklaeghgjkllhaefj'; // Replace with a secure secret key

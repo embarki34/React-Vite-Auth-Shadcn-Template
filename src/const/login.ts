@@ -11,7 +11,7 @@ export const login = async (
   credentials: LoginCredentials
 ): Promise<LoginResponse> => {
   try {
-    const response = await fetch(`${baseUrl}/login`, {
+    const response = await fetch(`${baseUrl}/identity/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -24,20 +24,20 @@ export const login = async (
     }
 
     const data: LoginResponse = await response.json();
+    console.log(data)
 
-    const decoded = jwtDecode<DecodedToken>(data.accessToken);
-    if (decoded.role === "admin") {
-      tokenManagerInstance.setRefreshToken(data.refreshToken);
-      tokenManagerInstance.setAccessToken(data.accessToken);
+    // tokenManagerInstance.setUserName(data.user.username);
+    // tokenManagerInstance.setUserwilaya(data.user.wilaya);
+    // tokenManagerInstance.setUserId(data.user.id);
+    // tokenManagerInstance.setUsercommune(data.user.commune);
+    // tokenManagerInstance.setUserOrganization(data.user.name);
+    tokenManagerInstance.setRefreshToken(data.refreshToken);
+    tokenManagerInstance.setToken(data.token);
+    tokenManagerInstance.setUser(data.user);
 
-      window.location.href = "/dashboard";
-    } else {
-      throw new Error(
-        "Installers are not allowed to login through this interface"
-      );
-    }
-
+    window.location.href = "/dashboard";
     return data;
+
   } catch (error) {
     throw new Error(error instanceof Error ? error.message : "Login failed");
   }
@@ -46,16 +46,17 @@ export const login = async (
   export const logout = (): void => {
 
       tokenManagerInstance.clearTokens();
+      Cookies.remove("token");
   window.location.href = "/login";
 };
 
 export const isAuthenticated = (): boolean => {
-  const token = Cookies.get("accessToken");
+  const token = Cookies.get("token");
   return !!token;
 };
 
 export const getAccessToken = (): string | null => {
-  return Cookies.get("accessToken") || null;
+  return Cookies.get("token") || null;
 };
 
 export const getRefreshToken = (): string | null => {

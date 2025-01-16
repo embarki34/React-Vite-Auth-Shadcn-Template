@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-// import Dashboard from './templates/dashboard';
+import Dashboard from '@/templates/Dashboard';
 // import Users from './templates/users';
 // import AdUsers from 'templates/adUsers';
 // import Orders from './templates/orders';
@@ -41,12 +41,12 @@ const InvalidRoute = () => (
 const AppRoutes: React.FC = () => {
   return (
     <Routes>
-      {/* <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/" element={<Navigate to="/dashboard" replace />} />
-      <Route path="/users" element={<Users />} />
-      <Route path="/add-user" element={<AdUsers />} />
-      <Route path="/orders" element={<Orders />} />
-      <Route path="/motivations" element={<Motivations />} /> */}
+      {/* <Route path="/users" element={<Users />} /> */}
+      {/* <Route path="/add-user" element={<AdUsers />} /> */}
+      {/* <Route path="/orders" element={<Orders />} /> */}
+      {/* <Route path="/motivations" element={<Motivations />} /> */}
       {/* <Route path="/*" element={<InvalidRoute />} /> */}
     </Routes>
   );
